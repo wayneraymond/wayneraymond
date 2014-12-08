@@ -1,0 +1,24 @@
+Title: The importance of real world connections
+----
+Date: 04.03.2014
+----
+Text: (image: spaceman.png alt: spaceman illustration title: For the wise man looks into space and he knows there is no limited dimensions)
+
+On the first Monday of the month I meet with like minded individuals at the Norther User Experience group (&#35;NUXUK). Sometimes there are lectures on new research and techniques and other times there are interactive workshops where you are encouraged to be an active participant within the group. There's also the added bonus of midget gems and beer (hey I'm being productive with my evening I'm allowed to socialise too!).
+
+(image: nuxuk.jpg alt: NUXUK group at the meet up  title: How much talent can you squeeze in to one space?)
+
+The topics so far have ranged from usability issues, through to creativity with uncreative client teams. I like to call that session 'free therapy for designers and devs'. And there's been a wealth of topics in between.
+
+As an interactive designer and user experience professional there is an ongoing commitment to life long learning, but it is also important to stay connected to the industry you work within. When I sit in the room surrounded by people from all different backgrounds it never ceases to amaze me how knowledgeable everybody is and how willing they are to share what they know. Meeting new people opens up new opportunities, you can find answers to problems you were trying to solve or collectively you may realise that you've faced similar barriers within a project and can work out how to overcome them.
+
+The UX 'community,' for want of a better word, or 'cohort' if I was pretending to be my old university lecturer, is still young as a collective in the North West of England, although the practice has been around for a while. It's gathering momentum and I've seen it grow from a small group of between 15 to 45 people in any one session to an annual conference of hundreds of designers, developers, educators, psychologists and other enthusiasts gathered together because they believe in making interactive experiences better for those who use them.
+
+So if you're reading this and you've been thinking about stepping out on the 'meet-up' scene, then step forth and join us. The guys who run these events do an amazing job, as do the lecturers who give up their Monday nights to help continue our never ending education. Come and network with your peers and find out what they're working on. In our disconnected online world there's never been more value in making real world connections.
+
+&#35;NUXUK runs on the first Monday of the month, hosted by Codecomputerlove you can stay up to date through the twitter feed (link: http://www.twitter.com/nuxuk text: @nuxuk title: NUX on Twitter popup: yes). Past workshops can be found on the (link: http://northern-user-experience.org/ text: blog title: Visit the NUX website popup: yes) and lectures from the NUX2 conference can be found (link: http://uxmanc.co.uk/videos/ text: here title: NUX2 conference videos popup: yes).
+
+##GET IN TOUCH
+
+(link: http://www.twitter.com/wayneraymond text: @wayneraymond title: Catch up with me on Twitter popup: yes)
+----

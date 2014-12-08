@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+/* -------------------------------------------------------------- 
+
+	DEFINITIONS: 	Main Style Sheet
+	AUTHOR: 		Wayne Pretl
+	VERSION: 		10.04.2014
+
+	CONTENTS:
+
+	1 				Resets
+	2 				Normalise
+	3 				Fixes
+	4 				Typography
+	5 				Layout
+	6 				Media Query
+
+-------------------------------------------------------------- */
+
+
+/* 1 RESET
+-------------------------------------------------------------- */
+body, div, h1, h2, h3, h4, h5, h6, p, blockquote, pre, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, th, td, article, aside, figure, footer,
+header, hgroup, menu, nav, section, img {
+	margin: 0; padding: 0; border: 0;
+}
+
+/* 2 NORMALISE
+-------------------------------------------------------------- */
+html {
+	font-size: 100%; line-height: 1; height: 100%;
+	-moz-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body { min-height: 100%; font-size: 100%; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section,
+audio, canvas, video { display: block; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+
+sup { top: -0.5em; }
+
+sub { bottom: -0.25em; }
+
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+b, strong { font-weight: bold; }
+
+abbr[title] { border-bottom: 1px dotted; }
+
+input, textarea, button, select { margin: 0; font-size: 100%; line-height: normal; vertical-align: baseline; }
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+	cursor: pointer; -webkit-appearance: button; }
+
+input[type="checkbox"], input[type="radio"] {
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box;
+	-ms-box-sizing: border-box; box-sizing: border-box; }
+
+textarea { overflow: auto; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+
+/* 3 FIXES
+-------------------------------------------------------------- */
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+/* Nicolas Gallagher micro clearfix */
+.group:before, .group:after { content: ""; display: table; } 
+.group:after { clear: both; }
+.group { zoom: 1; /* For IE 6/7 (trigger hasLayout) */ }
+
+
+/* 4 TYPOGRAPHY
+-------------------------------------------------------------- */
+html 			{ -webkit-font-smoothing: antialiased; font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+
+body 			{ font-family: 'open_sansregular', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:16px; /* Context 16px - line height 18px / 16px */ color:#222; }
+h1, h2, h3 		{ font-family: 'open_sansbold', Helvetica, Arial, sans-serif; color:#666; font-weight: normal; font-style: normal; }
+h1 				{ font-size: 2em; /* 28pt / 16pt */ text-transform: uppercase;  text-shadow: rgba(255,255,255,0.5) 0px 3px 3px; } 
+h2      		{ font-family: 'open_sanscondensed_light', 'open_sansregular', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1.5em; /* 20pt / 16pt */ letter-spacing: 0.05em; text-transform: uppercase; } 
+h3 				{ font-family: 'open_sanscondensed_light', 'open_sansregular', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1em; letter-spacing: 0.1em; }
+p 				{ font-size: 0.875em; color:#515151; letter-spacing: 0em; line-height: 1.5; margin-bottom: 1em; }
+a 				{ text-decoration: underline; color:#515151; }
+a:hover 		{ color:#61d9d5; }
+
+/* 5 LAYOUT
+-------------------------------------------------------------- */
+/* Page set up */
+body 				{ width:100%; height:100%; background: #e7e7e7 url(../img/handmadepaper.png) center repeat;}
+
+/* Page border */
+.border 			{ position: fixed; background-color: #333; z-index: 1000; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; backface-visibility: hidden; }
+.border.top 		{ top: 0; left: 0; width: 100%; height: 1em; }
+.border.right 		{ top: 0; right: 0; height: 100%; width: 1em; }
+.border.bottom 		{ bottom: 0; left: 0; width: 100%; height: 1em; }
+.border.left 		{ top: 0; left: 0; height: 100%; width: 1em; }
+
+/* Main Navigation */
+#nav 				{ z-index: 500; width:100%; margin: 2em 0 0; position:fixed; }
+#nav img 			{ width:100px; margin:0 auto; display:block; }
+nav 				{ text-align: center; }
+nav li 				{ display:inline; }
+nav a 				{ font-family: 'open_sanscondensed_light', 'open_sansregular', 'Helvetica Neue', Helvetica, Arial, sans-serif; letter-spacing: 0.1em; display:inline-block; padding: 1em; color:#bebebe; text-decoration: none; }
+nav a:hover 		{ text-decoration: underline; color:#515151;}
+
+/* Content sections */
+section 			{ display: table; width: 100%; height:100%; position: relative; margin: 1em auto; padding: 12em 2em 2em; overflow: hidden; }
+.sectionContent 	{ margin:0 auto; text-align: center; padding:0%; max-width: 80%; height:100%; }
+
+/* columns*/
+.colOne				{ width: 42%; float:left; margin: 5% 0 0 5%; text-align: left; }
+.colOne a,
+.projectCol a		{ text-decoration:none; border-bottom:1px dotted; }
+
+/* intro section */
+#intro_section 			{ margin:0 auto; text-align: center; padding:6%; border: 1px dotted #515151; max-width: 80%; }
+.intro_contact 			{ margin-top: 4em; }
+.intro_contact a 		{ font-family: 'open_sanscondensed_light', 'open_sansregular', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1.5em; letter-spacing: 0.05em; text-decoration: none; color:#515151;}
+.intro_contact a:hover 	{ color:#61d9d5; }
+
+/* about section */
+#about 					{ background: url(../img/about-bg.png) no-repeat center center fixed; background-size: 100%;} 			
+
+/* contact section*/
+#contact .sectionContent { padding:4em 0 0; }
+#contact a 				 { font-family: 'open_sans_condensedbold', 'open_sansregular', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 2em; letter-spacing: 0.05em; text-decoration: none; border-bottom: 1px dotted; padding: 1em 0; display: inline-block; }
+#contact .icons a 		 { font-family: 'icons'; border:0; font-size: 1.75em; padding: 1em 2%; }
+
+
+/* work menu*/
+.workMenu 				{ width:200px; height:260px; display: inline-block; margin:2%; }
+.workMenu img 			{ max-width: 100%; }
+.workMenu h2 			{ font-size:1em; margin-top: 1em; }
+.workMenu h3 			{ margin-top: 0.2em; }
+
+
+/* case study project pages */
+#project h1 			{ font-size: 1.125em; /* 18pt / 16pt */ font-weight: 100; text-transform: uppercase; color:#666; text-align: left; margin:0 auto; max-width: 90%; }
+.projectInfoContainer 	{ margin:0 auto; text-align: center; padding:5%; width:100%; background-color: #fff; min-height: 300px; }
+.projectIntro 			{ margin:0 auto; max-width: 80%; }
+.projectCol 			{ width: 40%; float:left; margin: 5% 0 0 5%; text-align: left; }
+.projectContent 		{ width:100%; background-color:#d9d9d9; margin:0 auto; text-align: center; padding: 1em 0; }
+.projectContent img 	{ max-width: 100%; height:auto; margin: 0 auto; padding:0 10%; }
+.projectContent video 	{ max-width: 90%; height:auto; margin: 0 auto; padding:0 10%; }
+.projectNav 			{ width:100%; background-color:#fff; text-align: center; padding: 1em 0; }
+
+
+/* blog */
+.blog, .blogarticle { width:50%; padding:14em 0 0;}
+.blog article { margin: 0 0 2em;}
+.blog h1, .blogarticle h1 { margin:0 0 0.5em; font-family: 'open_sanscondensed_light', 'open_sansregular', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1.5em; font-weight: 100; text-transform: uppercase; color:#666; text-shadow: rgba(255,255,255,0.5) 0px 3px 3px; text-align: left; max-width: 90%} /* 18pt / 16pt */
+.blog a, .blogarticle a { color:#515151; text-decoration:none; border-bottom:1px dotted; font-size: 0.875em;}
+.blogarticle a { font-size: 0.95em; }
+.blog a:hover, .blogarticle a:hover  { color:#61d9d5; }
+.blog p, .blogarticle p { font-size: 0.875em; color:#515151; letter-spacing: 0em; line-height: 1.5; }
+.blogarticle img {max-width: 100%; margin-bottom: 1em;}
+.blogarticle p {margin-bottom: 1em;}
+.blogarticle article {margin-bottom: 3em;}
+time { font-family: 'open_sanscondensed_light', 'open_sansregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;color:#61d9d5; margin-bottom: 1em; display: inline-block;}
+.blogarticle h2 { margin:0 0 0.5em; font-family: 'open_sanscondensed_light', 'open_sansregular', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 1.25em; font-weight: 100; text-transform: uppercase; color:#61d9d5; text-shadow: rgba(255,255,255,0.5) 0px 3px 3px; text-align: left;}
+
+
+/* hide mobile content */
+.mobile 				{ display:none; }
+
+
+/* 6 MEDIA QUERY
+-------------------------------------------------------------- */
+/* mobile portrait view 
+----------------------- */
+@media screen and (max-width: 320px) { 
+/* view setup */
+section 	{ max-height: 480px; }
+}
+
+/* mobile landscape view 
+------------------------ */
+@media screen and (max-width: 480px) {
+/* view setup */
+section 		{ max-height: 320px; }
+
+/* typography */
+h1 				{ font-size: 1.5em; margin-bottom: 1em;}
+h2 				{ font-size: 1.5em; }
+/* show mobile content */
+.mobile 		{ display: block; }
+.desktop 		{ display: none; }
+/* layout */
+.intro_contact a, 
+#contact a 		{ font-size: 1.25em; text-decoration: none; background: #ebebeb; height:3em; line-height: 3; display: block; border:1px solid #bbb; margin:0; padding:0; } 
+.call,
+a.call 			{ background-color: #c5de9e; }
+#contact .icons a { width: 45%; display: inline-block; margin:0.5em 0; padding:0; }
+#contact .icons a:nth-child(odd)  { float:left; }
+#contact .icons a:nth-child(even) { float:right; }
+.projectCol 	{ width:100%;}
+ul.mobile a		{ font-size: 2em; line-height: 50px; width:50px; height:50px; text-align: center; margin:0; padding:0; margin: 15px; }
+ul.mobile a:hover	{ font-size: 2em; line-height: 50px; width:50px; height:50px; text-align: center; margin:0; padding:0; margin: 15px; background-color: #bebebe; color:#fff; text-decoration: none; }	
+}
+
+
+/* 800px view 
+------------------------ */
+@media screen and ( max-width: 800px) {
+.colOne 		{ width:100%; }
+.blog, 
+.blogarticle 	{ width:100%; padding: 14em 2em 1em;}
+}
+
+
+/* 900px view 
+------------------------ */
+@media screen and ( min-width: 900px) {
+.blog p, .blogarticle p { max-width:700px;}
+}
+
+
+/* 1600px view 
+------------------------ */
+@media screen and ( min-width: 1600px) {
+/* typography */
+h1 					{ font-size: 2.5em; }
+h2 					{ font-size: 2em; }
+/* layout */
+.sectionContent 	{ max-width: 1024px; }
+.intro_contact a 	{ font-size: 2em; }
+.colOne p 			{ font-size: 1em; line-height: 1.5em; }
+}
+
+

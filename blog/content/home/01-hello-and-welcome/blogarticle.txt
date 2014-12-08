@@ -1,0 +1,31 @@
+Title: I came to your site and all I got was this lousy article
+----
+Date: 01.03.2014
+----
+Text: (image: in-the-beginning.png alt: chicken and egg illustration title: You can’t make an omelette without breaking a few eggs)
+
+See that light? The one down there, at the end of the tunnel? Well it’s finally appearing. It’s taken a while for me to work on the design and dev of my site and it’s by no means perfect, but working on it bit by bit, night after night it’s finally moved from sketchbook to screen.
+
+I still need to add a responsive mobile layer to the home page, add projects that show all the many things I can do when it comes to user experience and interaction design, and underneath the hood I’ll be tidying up the code and reducing some of the cascading style. 
+
+Oh, and the designer inside me will forever need to tweak, iterate, rinse and repeat - you get that right? But hey, you made it this far, so thanks for stopping by.
+
+##A BRIEF BACKGROUND
+
+Unless you’ve already read my (link: http://www.linkedin.com/in/wpretl text: linkedin title: View my full profile on linkedin popup: yes) profile you might not know that becoming an interactive designer and understanding the user experience is not a new idea for me. 
+
+The journey has taken over 20 years from being interested in art and technology in high school (and winning the most outstanding pupil in technology award) through to studying graphic design and computer programming at college and interactive design at university. Art and technology have always been equal creative pursuits for me.
+
+I’ve applied that knowledge in professional practice at some amazing agencies and worked with some big well known brands, some of the process and (link:../work.html text:work title:See some work samples) I’ve featured on my site.
+
+The greatest thing about interactive media is that, aside from creating interactions based on the goals of the end user, the learning never stops. Each projects brings it’s own set of challenges and new learnings. Each problem needs a different solution. Along the way I’ve worked along side and met some super talented creative people that shared their ideas and knowledge with me. I hope through my writing, I’ll pass some of that knowledge on.
+
+##GET IN TOUCH
+
+If I can help you with a project or you want to chat, get in touch with me at (email: wayne@wayneraymond.com popup: yes title: Go on email me!) I’ll even buy you a coffee (or meet for a beer if it’s Friday evening).
+
+cheers
+wayne
+
+(link: http://www.twitter.com/wayneraymond text: @wayneraymond title: Catch up with me on Twitter popup: yes)
+----
